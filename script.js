@@ -48,6 +48,6 @@ function check() {
       score = 0;
    };
 
-   // Updates the UI with the passwordScore percentage
+   // Updates the UI along with the passwordScore percentage
    document.getElementById("passwordScore").innerHTML = `Password Strength: ${score}%`;
 };

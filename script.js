@@ -51,3 +51,15 @@ function check() {
    // Updates the UI along with the passwordScore percentage
    document.getElementById("passwordScore").innerHTML = `Password Strength: ${score}%`;
 };
+
+// Allows the user to see their password to view what password did they enter.
+function show() {
+   const password = document.getElementById("passwordInput").type;
+
+   // Conditional statement for viewing their password
+   if (password === "password") {
+      document.getElementById("passwordInput").type = "text";
+   } else {
+      document.getElementById("passwordInput").type = "password";
+   }
+};
